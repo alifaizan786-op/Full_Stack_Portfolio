@@ -206,6 +206,32 @@ p {
         display: none;
     }
 
+    h2 {
+        padding: 0px 20px 250px 54px;
+        font-size: 94px;
+        border-right: solid 10px;
+    }
+    
+    h3 {
+        font-family: serif;
+        line-height: 1.5;
+        font-size: 25px;
+        padding: 0px 0px 0px 20px;
+    }
+    
+    p {
+        font-family: serif;
+        line-height: 1.5;
+        font-size: 20px;   
+        padding: 0px 0px 0px 20px;
+    }
+
+    .aboutme{
+        display: flex;
+        margin: 0% 1% 0% 6%;
+        padding: 5% 0% 5% 0%;  
+    }
+
     .hero {
         background-image: url(../images/hero_.webp);
         background-attachment: fixed;
@@ -238,6 +264,58 @@ p {
     .overlay {
         opacity: 1;
         
+    }
+
+    .portfolio {
+        display: flex;
+        margin: 0% 0% 0% -5%;
+        padding: 4% 0% 4% 0%;
+    }
+    
+    .portfolio h2 {
+        padding: 0px 20px 695px 54px;
+        font-size: 94px;
+        border-right: solid 10px;
+    }
+    
+    .portfolior{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .portfoliochild {
+        background-color: var(--brandcol1);
+        color: var(--brandcol3);
+        width: 279px;
+        height: 260px;
+        margin: 0% 1% 1% 1%;
+        padding: 1%;
+        transition: 1.5s ease;
+    }
+    
+    .portfoliochild p {
+        display: none;
+        transition: 1.5s ease;
+    }
+    
+    .portfoliochild img {
+        height: 187px;
+        width: 267px;
+        transition: 1.5s ease;
+    }
+    
+    .portfoliochild:hover  {
+        width: 100%;
+        height: 550px;
+    }
+    
+    .portfoliochild:hover img {
+        height: initial;
+        width: 560px;
+    }
+    
+    .portfoliochild:hover p {
+        display: initial;
     }
 
         
@@ -313,6 +391,33 @@ p {
         display: block;
     }
 
+    h2 {
+        padding: 0px;
+        font-size: 94px;
+        border-bottom: solid 10px;
+        border-right: none;
+    }
+    
+    h3 {
+        font-family: serif;
+        line-height: 1.5;
+        font-size: 25px;
+        padding: 0px 0px 0px 20px;
+    }
+    
+    p {
+        font-family: serif;
+        line-height: 1.5;
+        font-size: 20px;   
+        padding: 0px 0px 0px 20px;
+    }
+
+    .aboutme{
+        display: block;
+        margin: 2%;
+        padding: 0px; 
+    }
+
     .hero {
         background-image: url(../images/hero_.webp);
         background-attachment: fixed;
@@ -344,6 +449,60 @@ p {
 
     .overlay {
         opacity: 1;
+    }
+
+    .portfolio {
+        display: block;
+        margin: 0% 1% 0% 1%;
+        padding: 4% 0% 4% 0%;
+    }
+    
+    .portfolio h2 {
+        padding: 0px 0px 0px 0px;
+        font-size: 94px;
+        border-bottom: solid 10px;
+        border-right: none;
+    }
+    
+    .portfolior{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1%;
+    }
+    
+    .portfoliochild {
+        background-color: var(--brandcol1);
+        color: var(--brandcol3);
+        width: 279px;
+        height: 260px;
+        margin: 0% 1% 1% 1%;
+        padding: 1%;
+        transition: 1.5s ease;
+    }
+    
+    .portfoliochild p {
+        display: none;
+        transition: 1.5s ease;
+    }
+    
+    .portfoliochild img {
+        height: 187px;
+        width: 267px;
+        transition: 1.5s ease;
+    }
+    
+    .portfoliochild:hover  {
+        width: 100%;
+        height: 550px;
+    }
+    
+    .portfoliochild:hover img {
+        height: initial;
+        width: 560px;
+    }
+    
+    .portfoliochild:hover p {
+        display: initial;
     }
 }
     
