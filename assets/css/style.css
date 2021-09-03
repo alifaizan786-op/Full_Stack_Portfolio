@@ -164,6 +164,49 @@ p {
     display: initial;
 }
 
+.resume {
+    display: flex;
+    margin: 0% 7% 0% 7%;
+    padding: 4% 0% 4% 0%;
+}
+
+.resume img {
+    padding: 0% 1%;
+    width: 70%;
+}
+
+.resumer {
+    background-image: url(../images/Resume.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    width: 95%;
+    margin: 0% 1%;
+    border: solid 10px;
+}
+
+.resumer h3 {
+    text-align: center;
+    background-color: rgba(17,20,27,0.25);
+    height: 100%;
+    font-size: 110px;
+    line-height: 2;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.resumer:hover h3 {
+    opacity: 1;
+}
+
+.resume h2 {
+    padding: 0px 20px 410px 54px;
+    font-size: 94px;
+    border-right: solid 10px;
+}
+
+
 
 @media screen and (max-width: 1007px) {
     header {
