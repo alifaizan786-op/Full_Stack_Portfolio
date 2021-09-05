@@ -50,17 +50,20 @@ nav li {
 
 .hero {
     background-image: url("../images/hero_.webp");
-    background-attachment: fixed;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 600px;
+    position: relative;
+    transition: 2s ease;
+}
+
+.hero:hover {
+    background-image: linear-gradient(rgba(17,20,27,0.5),rgba(171,38,38,0.5)),url(../images/hero_.webp);
 }
 
 h1 {
     font-size: 110px;
-    background: rgba(17,20,27,0.5);
     height: 600px;
     width: 100%;
     color: var(--brandcol3);
@@ -77,25 +80,41 @@ h1 {
     top: 315px;
 }
 
-.overlay {
+.hero h1, .hero h3 {
     opacity: 0;
     transition: 2s ease;
 }
 
-.hero:hover .overlay {
+.hero:hover h1 {
     opacity: 1;
 }
 
-.aboutme{
+.hero:hover h3 {
+    opacity: 1;
+}
+
+.aboutme, .portfolio, .resume, .contact{
     display: flex;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 8% 0% 0%;
     padding: 4% 0% 4% 0%;
 }
 
+.aboutmer, .portfolior, .resumer, .contactr {
+    border-left: 10px solid;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutmel, .portfoliol, .resumel, .contactl {
+    width: 25%;
+    min-width: 500px;
+}
+
 h2 {
-    padding: 0px 20px 160px 169px;
     font-size: 94px;
-    border-right: solid 10px;
+    text-align: right;
+    padding: 0% 3%;
 }
 
 h3 {
@@ -111,29 +130,29 @@ p {
     font-size: 25px;   
     padding: 0px 0px 0px 20px;
 }
-
+/* 
 .portfolio {
     display: flex;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 8% 0% 8%;
     padding: 4% 0% 4% 0%;
 }
 
 .portfolio h2 {
     padding: 0px 20px 437px 54px;
     font-size: 94px;
-    border-right: solid 10px;
 }
 
 .portfolior{
     display: flex;
     flex-wrap: wrap;
-}
+    border-left: 10px solid;
+} */
 
 .portfoliochild {
     background-color: var(--brandcol1);
     color: var(--brandcol3);
-    width: 333px;
-    height: 260px;
+    width: 393px;
+    height: 393px;
     margin: 0% 1% 1% 1%;
     padding: 1%;
     transition: 1.5s ease;
@@ -144,10 +163,27 @@ p {
     transition: 1.5s ease;
 }
 
+.portfoliochild h3 {
+    font-size: 46px;
+}
+
 .portfoliochild img {
-    height: 187px;
-    width: 311px;
+    width: 366px;
     transition: 1.5s ease;
+}
+
+.portfoliochild input[type=submit] {
+    background-color:var(--brandcol2);
+    color:var(--brandcol3);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+.portfoliochild input[type=submit]:hover {
+    background-color: var(--brandcol1);
 }
 
 .portfoliochild:hover  {
@@ -163,27 +199,27 @@ p {
 .portfoliochild:hover p {
     display: initial;
 }
-
+/* 
 .resume {
     display: flex;
-    margin: 0% 7% 0% 7%;
+    margin: 0% 8% 0% 8%;
     padding: 4% 0% 4% 0%;
 }
 
-.resume img {
-    padding: 0% 1%;
-    width: 70%;
-}
-
 .resumer {
+    border-left: solid 10px;
+    width: 100%;
+} */
+
+.resumerc {
     background-image: url(../images/Resume.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 500px;
-    width: 95%;
-    margin: 0% 1%;
+    width: 97%;
     border: solid 10px;
+    margin: 0% 1%;
 }
 
 .resumer h3 {
@@ -196,29 +232,39 @@ p {
     transition: 1.5s ease;
 }
 
-.resumer:hover h3 {
+.resumerc:hover h3 {
     opacity: 1;
 }
-
+/* 
 .resume h2 {
-    padding: 0px 20px 410px 54px;
+    padding: 0px 20px 410px 103px;
     font-size: 94px;
-    border-right: solid 10px;
 }
 
 .contact {
     display: flex;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 8% 0% 8%;
     padding: 4% 0% 4% 0%;
 
 }
-  
+
+.contact h2 {
+    padding: 0px 20px 160px 120px;
+}
+
 .contactr {
+    width: 100%;
+    border-left: solid 10px;
+} */
+  
+.contactrc {
     border-radius: 5px;
     background-color: rgba(17,20,27,0.5);
     padding: 20px;
     width: 100%;
-  }
+    height: 100%;
+    margin: 0% 1%;
+}
   
 .f1 {
     float: left;
@@ -232,11 +278,11 @@ p {
     margin-top: 6px;
 }
   
-/* .f3:after {
+.f3:after {
     content: "";
     display: table;
     clear: both;
-} */
+}
 
 input[type=text], input[type=email], textarea {
     width: 100%;
@@ -260,6 +306,13 @@ input[type=submit] {
     cursor: pointer;
     float: right;
 }
+
+@media screen and (max-width: 1080px) {
+    .f1, .f2, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
 
 footer {
     background-color: var(--brandcol2);
@@ -304,7 +357,7 @@ footer .logo {
 }
 
 
-@media screen and (max-width: 1007px) {
+/* @media screen and (max-width: 1007px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -459,9 +512,9 @@ footer .logo {
 
         
 }
-  
-
-@media screen and (max-width: 640px) {
+   */
+/* 
+@media screen and (max-width: 1007px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -647,4 +700,4 @@ footer .logo {
     
 
   
-
+ */
