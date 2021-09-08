@@ -4,6 +4,7 @@
     --brandcol3 : #fff ;
 }
 
+/* Header & Navigation Styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -53,6 +54,7 @@ header li a:hover {
     display: none;
 }
 
+/* Hero Styling */
 .hero {
     background-image: url("../images/hero_.webp");
     width: 100%;
@@ -98,6 +100,8 @@ h1 {
     opacity: 1;
 }
 
+/* Sections Styling */
+
 .aboutme, .portfolio, .resume, .contact{
     display: flex;
     margin: 0% 8% 0% 0%;
@@ -110,6 +114,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 0.1%;
+    justify-content: space-evenly;
 }
 
 .aboutmel, .portfoliol, .resumel, .contactl {
@@ -212,10 +217,9 @@ p {
 
 .popup:target {
     display: flex;
-    position: fixed;
-    top: 88px;
-    left: 430px;
-    height: 91%;
+    position: absolute;
+    top: 8%;
+    left: 25%;
     width: 50%;
     align-items: center;
     justify-content: center;
@@ -306,6 +310,8 @@ input[type=submit] {
     
 }
 
+/* Footer Styling */
+
 footer {
     background-color: var(--brandcol2);
     color: var(--brandcol3);
@@ -338,18 +344,9 @@ footer .logo {
     padding: 10px;
 }
 
+/* Responsive Styling */
 
-  
-
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-}
-
-
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1100px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -360,23 +357,23 @@ footer .logo {
     }
     
     .logo {
-        font-size: 45px;
-        padding: 20px 10px 20px 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 53px;
     }
     
     nav {
         display: none
     }
     
-    .socialicon {
+    header .socialicon {
         display: none;
     }
     
     .drpdwnbtn {
         background-color: #11141b;
         color: white;
-        padding: 16px;
-        font-size: 65px;
+        font-size: 80px;
         border: none;
     }
       
@@ -390,15 +387,17 @@ footer .logo {
     .mobnavdd {
         display: none;
         position: absolute;
-        background-color: var(--brandcol3);
+        background-color: var(--brandcol2);
         z-index: 1;
         font-size: 25px;
         min-width: 641px;
         text-align: center;
+        opacity: 0.7;
+        width: 100%;
     }
       
     .mobnavdd a {
-        color: black;
+        color:var(--brandcol3);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -417,5 +416,57 @@ footer .logo {
     .mobnav:hover .mobnavdd {
         display: block;
     }
-        
+
+    .hero {
+        background-image: linear-gradient(rgba(17,20,27,0.5),rgba(171,38,38,0.5)),url(../images/hero_.webp);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    .hero h1, .hero h3 {
+        opacity: 1;
+        transition: 2s ease;
+    }
+
+    .aboutme, .portfolio, .resume, .contact{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0% 0% 0% 0%;
+        padding: 4% 0% 4% 0%;
+    }
+    
+    .aboutmer, .portfolior, .resumer, .contactr {
+        border-top: 10px solid;
+        border-left: none;
+        min-width: 550px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5%;
+        padding-top: 1%;
+    }
+    
+    .aboutmel, .portfoliol, .resumel, .contactl {
+        width: 100%;
+        min-width: 550px;
+        background-image: linear-gradient(rgba(17,20,27,0.5),rgba(171,38,38,0.5)),url(../images/hero_.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .resumer h3 {
+        text-align: center;
+        background: linear-gradient(rgba(17,20,27,0.5),rgba(171,38,38,0.5));
+        height: 100%;
+        font-size: 110px;
+        line-height: 2;
+        opacity: 1;
+        transition: 1.5s ease;
+    }   
 }
