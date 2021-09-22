@@ -1,9 +1,7 @@
 # Full Stack Portfolio
-```md
-    ![alt text](assets/images/Portfolio_Mock_Up.png)
-    ```
+![Portfolio_Mock_Up](assets/images/Portfolio_Mock_Up.png)
 
-## Table of Contents (Optional)
+## Table of Contents
 - [About](#about)
 - [Usage](#usage)
 - [Credits](#credits)
@@ -16,7 +14,8 @@ This Portfolio was designed to showcase the work of Faizan Ali. This portfolio d
 
 
 ## Usage
-This profeesional portfolio is used to showcase that work of Faizan Ali, and for conatc and hiring purposes only.
+- Click on Portfolio porject tile to view project details
+- Click on Resume Image to download resume
 
 ## Credits
 - [Faizan Ali](https://github.com/alifaizan786-op)
@@ -24,5 +23,8 @@ This profeesional portfolio is used to showcase that work of Faizan Ali, and for
 - [W3 Schools](https://www.w3schools.com/)
 
 ## Features
-If your project has a lot of features, list them here.
+- Work SHowcase
+- Contact
+- Resume
+- Hiring
 
