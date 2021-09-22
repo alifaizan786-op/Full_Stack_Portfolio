@@ -57,7 +57,6 @@ header li a:hover {
 /* Hero Styling */
 .hero {
     background-image: url("../images/hero_.webp");
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -442,7 +441,7 @@ footer .logo {
     .aboutmer, .portfolior, .resumer, .contactr {
         border-top: 10px solid;
         border-left: none;
-        min-width: 550px;
+        min-width: none;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -452,7 +451,7 @@ footer .logo {
     
     .aboutmel, .portfoliol, .resumel, .contactl {
         width: 100%;
-        min-width: 550px;
+        min-width: none;
         background-image: linear-gradient(rgba(17,20,27,0.5),rgba(171,38,38,0.5)),url(../images/hero_.webp);
         background-position: center;
         background-repeat: no-repeat;
@@ -470,3 +469,47 @@ footer .logo {
         transition: 1.5s ease;
     }   
 }
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    .aboutmer, .portfolior, .resumer, .contactr {
+        border-top: 10px solid;
+        border-left: none;
+        min-width: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5%;
+        padding-top: 1%;
+    }
+    
+    .aboutmel, .portfoliol, .resumel, .contactl {
+        width: 100%;
+        min-width: none;
+        background-image: linear-gradient(rgba(17,20,27,0.5),rgba(171,38,38,0.5)),url(../images/hero_.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .resume h3 {
+        font-size: ;
+    }
+
+    .resumer h3 {
+        text-align: center;
+        background: linear-gradient(rgba(17,20,27,0.5),rgba(171,38,38,0.5));
+        height: 100%;
+        font-size: 70px;
+        line-height: 3;
+        opacity: 1;
+        transition: 1.5s ease;
+    }
+
+    .portfolior {
+        padding: 3% 0% 0% 15%;
+    }
