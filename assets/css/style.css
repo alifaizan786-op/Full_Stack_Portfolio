@@ -226,7 +226,7 @@ p {
 }
   
 .resumerc {
-    background-image: url(../images/Resume.webp);
+    background-image: url(../images/Resume.PNG);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -496,9 +496,6 @@ footer .logo {
         background-attachment: fixed;
     }
 
-    .resume h3 {
-        font-size: ;
-    }
 
     .resumer h3 {
         text-align: center;
@@ -513,3 +510,4 @@ footer .logo {
     .portfolior {
         padding: 3% 0% 0% 15%;
     }
+}
